@@ -1,0 +1,77 @@
+.portfolio__title .text-3d{
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    margin-top: 20%;
+
+    transform: translate(0px, -200%);
+    opacity: 0;
+    transition: all 2s ease 0s;
+}
+.portfolio__title .text-3d._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.portfolio{
+    background-image: url(../images/Фото-1111.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.portfolio__list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.portfolio__item{
+    margin-left: auto;
+    margin-right: auto;
+    height: 360px;
+    box-shadow: 0 0 15px;
+    border: 1px solid wheat;
+}
+
+.pic{
+    background-position-x: 40%;
+}
+.img-1{
+    background-image: url(../images/family/img2.jpg);
+}
+.img-2{
+    background-image: url(../images/Фото-46.jpg);
+}
+.img-3{
+    background-image: url(../images/909.jpg);
+}
+.img-4{
+    background-image: url(../images/wedding/wed15.jpg);
+}
+.img-5{
+    background-image: url(../images/123.jpg);
+}
+.img-6{
+    background-image: url(../images/subj/subj5.jpg);
+}
+
+
+
+[data-tooltip]::after {
+    left: 50%; 
+    font-size: 26px;
+    transform: translate(-50%, -50%);
+    padding: 160px 0px;
+    width: 100%;
+    text-align: center;
+} 
+
+[data-tooltip]:hover::after {
+    opacity: 0.8; 
+    top: 50%; 
+}

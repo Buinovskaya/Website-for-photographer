@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- <script defer src="../script/script.js"></script> -->
+    <script defer src="../script/portfolio.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/portfolio.css">
+    <link rel="stylesheet" href="../css/media.css">
+</head>
+<body>
+
+<div class="site">
+
+    <header class="header" id="change-bg">
+        <div class="container"> 
+        
+            <div class="header__top">
+                <div class="logo">
+                    <h1><a href="../index.html"> Женя Максимьюк </a></h1>
+                    <p>Фотограф Lifestyle</p>
+                </div>
+
+                <div class="menu__icon">
+                    <span></span>
+                </div>
+                <nav class="nav">
+                    <ul class="menu__list">
+                        <li><a href="../index.html" class="menu__link">Главная</a></li>
+                        <li class="sub_li"><a href="#" class="menu__link"> Портфолио</a>
+                            <span class="menu__arrow"></span>
+                            <ul class="menu__sub-list"> 
+                                <li><a href="portfolio/family.html" class="menu__sub-link">Семейная съемка</a></li>
+                                <li><a href="portfolio/individual.html" class="menu__sub-link">Портрет</a></li>
+                                <li><a href="#" class="menu__sub-link">Lovestory</a></li>
+                                <li><a href="portfolio/wedding.html" class="menu__sub-link">Свадьбы</a></li>
+                                <li><a href="portfolio/content.html" class="menu__sub-link">Контент/Репортаж</a></li>
+                                <li><a href="portfolio/subject.html" class="menu__sub-link">Предметная съемка</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="price.html" class="menu__link">Прайс</a></li>
+                        <li><a href="contacts.html" class="menu__link">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header__bot">
+
+                <div class="portfolio__title">
+                <h2 class="text-3d anim-items anim-no-hide">Портфолио</h2>
+                </div>
+
+            </div>
+        
+        </div>
+    </header>
+
+    <section class="portfolio">
+        <div class="container">
+            <div class="portfolio__list">
+                <div class="portfolio__item" data-tooltip="Семейная съемка">
+                    <a href="/pages/portfolio/family.html">
+                        <span class="pic img-1"></span>
+                    </a>
+                </div> 
+                <div class="portfolio__item" data-tooltip="Портрет">
+                    <a href="/pages/portfolio/individual.html">
+                        <span class="pic img-2"></span>
+                    </a>
+                </div> 
+                <div class="portfolio__item" data-tooltip="Lovestory">
+                    <a href="#">
+                        <span class="pic img-3"></span>
+                    </a>
+                </div> 
+                <div class="portfolio__item" data-tooltip="Свадебнвя съемка">
+                    <a href="/pages/portfolio/wedding.html">
+                        <span class="pic img-4"></span>
+                    </a>
+                </div> 
+                <div class="portfolio__item" data-tooltip="Контент/Репортаж">
+                    <a href="#">
+                        <span class="pic img-5"></span>
+                    </a>
+                </div> 
+                <div class="portfolio__item" data-tooltip="Предметная съемка">
+                    <a href="/pages/portfolio/subject.html">
+                        <span class="pic img-6"></span>
+                    </a>
+                </div> 
+                
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contacts">
+        <div class="container">
+           <div class="contacts__title"> 
+               <h2 class="text-3d">Контакты</h2>
+               <p>Для консультации или записи на фотосессию - заполните форму ниже, и я свяжусь с вами в ближайшее время</p>
+            </div>
+            
+            <form class="form" id="data" action="" method="POST">
+                <div class="form__info">
+                    <input class="form__input" required type="text" name="name" placeholder="Имя *">
+                    <input class="form__input" required type="email" name="email" placeholder="e-mail *">
+                    <input class="form__input" required type="tel" name="phone" placeholder="Телефон *">
+                </div>
+                <div class="form__message">
+                    <textarea class="form__input message" required placeholder="Ваши пожелания (напр.: вид фотосессии, дата, место) *"></textarea>
+                </div> 
+            </form>
+            <button class="button" type="submit" form="data">Отправить</button>
+        </div>
+
+</section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__copy">
+                &copy; Copyright 2021 Женя Максимьюк
+                </div>
+                <div class="footer__ico">
+                    <a href="https://www.instagram.com/jeym_photo/" target="_blank"><span class="ico ico__foot-ig"></span></a>
+                    <a href="https://www.facebook.com/jenya.maksimjuk" target="_blank"><span class="ico ico__foot-fb"></span></a>
+                    <a href="tel:+375445409266" target="_blank"><span class="ico ico__foot-phone"></span></a>
+                    <a href="tg://resolve?domain=NikName" target="_blank"><span class="ico ico__foot-tg"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </footer>
+</div>
+</body>
+</html>

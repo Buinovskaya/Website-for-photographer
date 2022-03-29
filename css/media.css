@@ -1,0 +1,457 @@
+@media (max-width: 1024px){
+    
+    header{
+        height: 800px;
+    }
+    .header__bottom p{
+        font-size: 26px;
+        width: 60%;
+    }
+    .about__img{
+        width: 90%;
+        margin-left: 20px;
+    }
+    .insta__list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .review__text{
+        width: 70%;
+    }
+
+    .portfolio__list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .slideDesc{
+        font-size: 18px;
+    }
+
+    .contact__item{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    header{
+        height: 700px;
+    }
+    .header__bottom p{
+        bottom: 80px;
+    }
+	.menu__icon {
+		z-index: 5;
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 18px;
+		cursor: pointer;
+        left: 25px;
+        top: -86px;
+	}
+	.menu__icon span,
+	.menu__icon::before,
+	.menu__icon::after {
+		left: 0;
+		position: absolute;
+		height: 10%;
+		width: 100%;
+		transition: all 0.8s ease 0s;
+		background-color: #fff;
+	}
+	.menu__icon::before,
+	.menu__icon::after {
+		content: "";
+	}
+	.menu__icon::before {
+		top: 0;
+	}
+	.menu__icon::after {
+		bottom: 0;
+	}
+	.menu__icon span {
+		top: 50%;
+		transform: scale(1) translate(0px, -50%);
+	}
+
+	.menu__icon._active span {
+		transform: scale(0) translate(0px, -50%);
+	}
+	.menu__icon._active::before {
+		top: 50%;
+		transform: rotate(-405deg) translate(0px, -50%);
+	}
+	.menu__icon._active::after {
+		bottom: 50%;
+		transform: rotate(405deg) translate(0px, 50%);
+	}
+
+    .nav {  
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 190px 40px 30px 30px;
+        transition: left 0.3s ease 0s;
+        overflow: auto;
+        z-index: 2;
+    }
+    .nav ul{
+        display: block;
+    }
+    .nav._active {
+        left: 0;
+    }
+
+    .menu__list > li {
+        flex-wrap: wrap;
+        margin: 0px 0px 30px 0px;
+    }
+    .menu__list > li:last-child {
+        margin-bottom: 0;
+    }
+    .nav > ul > li>a {
+        font-size: 20px;
+    }
+    body._touch .menu__arrow{
+        right: -20px;
+        top: 8px;
+    }
+    .menu__sub-list {
+        position: relative;
+        flex: 1 1 100%;
+        display: none;
+    }
+
+    .nav::before{
+        left: -100%;
+    }
+    .nav._active::before {
+        content: "";
+        position: fixed;
+        width: 210px;
+        top: 0;
+        left: 0;
+        height: 90px;
+        background-color: rgba(0, 0, 0);
+        z-index: 2;
+        transform: translate(0);
+        transition: left 0.3s ease-out 0s;
+    }
+
+    .menu__sub-link {
+        font-size: 18px;
+    }
+
+    .about__item-title {
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+    
+    .insta__item{
+        height: 300px;
+    }
+    .pic{
+        width: 300px;
+        height: 300px;
+    }
+    .form{
+        grid-template-columns: 1fr;
+    }
+    .footer__wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .portfolio__item {
+        height: 300px;
+    }
+    .slideText {
+        font-size: 26px;
+    }
+    .price-item{
+        font-size: 28px;
+    }
+    .slideDesc{
+        font-size: 16px;
+    }
+    .title{
+        font-size: 26px;
+    }
+    
+    .contact__list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contact__item{
+        margin-top: 25px;
+        margin-bottom: 25px;
+        width: 80%;
+    }
+    .portfolio__title > p {
+        font-size: 32px;
+    }
+    .carousel{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .carousel img {
+        width: 260px;
+        height: 200px;
+    }
+    .family-1 h3,
+    .family-2 h3{
+    font-size: 24px;
+    }
+}
+
+@media (max-width: 425px){
+    header {
+        height: 550px;
+    }
+    .container {
+        width: 90%;
+    }
+    .logo h1 {
+        font-size: 26px;
+    }
+    .menu__icon {
+        left: 8px;
+        top: -78px;
+    }
+    .nav{
+        padding-top: 90px;
+    }
+    .nav._active::before {
+        width: 200px;
+    }
+    .nav > ul > li>a {
+        font-size: 18px;
+    }
+    .menu__sub-link {
+        font-size: 16px;
+    }
+    .header__bottom p{
+        bottom: 60px;
+        font-size: 22px;
+        width: 80%;
+        right: auto;
+    }
+    .about {
+        padding-top: 20px;
+        padding-bottom: 45px;
+    }
+    .about__list {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0px 15px;
+        grid-row-gap: 10px;
+    }
+    .about__item-title {
+        font-size: 28px;
+        padding-top: 0;
+    }
+    .about__img {
+        width: 90%;
+        margin-left: 0;
+        padding: 110px;
+    }
+    .insta{
+    padding-top: 20px;
+    padding-bottom: 60px;
+    }
+    .insta__title{
+        font-size: 28px;
+    }
+    .insta__list{
+    grid-column-gap: 0px;
+    }
+    .insta__item {
+        height: 150px;
+    }
+    .pic {
+        width: 150px;
+        height: 150px;
+    }
+    .review{
+        height: 500px;
+    }
+    .review__title,
+    .review__title .text-3d{
+        font-size: 28px;
+        padding-top: 30px;
+    }
+    .review__item {
+        padding-top: 30px;
+        padding-bottom: 45px;
+    }
+    .review__item p {
+        padding-bottom: 20px;
+    }
+    .review__text {
+        width: 80%;
+        font-size: 16px;
+    }
+    .contacts{
+        padding-top: 20px;
+        padding-bottom: 60px;
+    }
+    .contacts__title,
+    .contacts__title .text-3d {
+        font-size: 28px;
+        padding-bottom: 30px;
+    }
+    .contacts__title p {
+        font-size: 18px;
+    }
+    .form{
+        gap: 0;
+    }
+    .button{
+        padding: 25px 70px;
+    }
+    .footer__ico {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .ico{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .portfolio__item {
+        height: 150px;
+    }
+    .portfolio__list {
+        grid-column-gap: 0px;
+        grid-row-gap: 15px;
+    }
+    .portfolio__title .text-3d {
+        font-size: 42px;
+    }
+    .slider{
+    border: solid white 10px;
+    max-width: 100%;
+    }
+    .slideText {
+        font-size: 22px;
+    }
+    .price-item{
+        font-size: 24px;
+        padding-top: 10px;
+    }
+    .slideDesc{
+        font-size: 14px;
+        padding-top: 10px;
+    }
+    .title {
+        font-size: 20px;
+    }
+    .contacts__title .text-3d {
+        font-size: 50px;
+    }
+    .carousel img {
+        width: 150px;
+        height: 110px;
+        padding-left: 0px;
+    }
+    .portfolio__title > p {
+        font-size: 28px;
+        padding-top: 20px;
+    }
+}
+@media (max-width: 375px){
+    header {
+        height: 500px;
+    }
+    .logo h1 {
+        font-size: 24px;
+        padding-left: 20px;
+    }
+    .logo p {
+        padding-left: 20px;
+    }
+    
+    .header__bottom p {
+        bottom: 60px;
+        font-size: 18px;
+    }
+    .about__item-title {
+        font-size: 26px;
+    }
+    .insta__title{
+        font-size: 26px;
+    }
+    .insta p {
+        padding-bottom: 20px;
+    }
+    .contacts__title,
+    .contacts__title .text-3d {
+        font-size: 26px;
+    }
+    ::placeholder{
+        font-size: 12px;
+        padding-top: 15px;
+        padding-left: 15px;
+    }
+    .message {
+        height: 165px;
+    }
+    .button {
+        padding: 20px 60px;
+    }
+}
+
+@media (min-width: 1680px){
+    .logo h1 {
+        font-size: 52px;
+    }
+    .logo p {
+    font-size: 24px;
+    }
+    .nav > ul > li>a {
+        font-size: 22px;
+    }
+    .nav li > ul > li > a {
+        font-size: 22px;
+    }
+    .about__item-title{
+        font-size: 42px;
+    }
+    .about__item-text{
+        font-size: 22px;
+    }
+    .insta__title {
+        font-size: 42px;
+    }
+    
+    .insta p{
+        font-size: 24px;
+    }
+    .review {
+        height: 650px;
+    }
+    .review__title,
+    .review__title .text-3d{
+        font-size: 42px;
+    }
+    .review__img{
+        width: 150px;
+    }
+    .review__item p{
+        font-size: 20px;
+    }
+    .review__text{
+        font-size: 20px;
+    }
+
+    .slider .item,
+    .slider .item img {
+        height: 850px;
+    }
+    .slideText {
+        font-size: 42px;
+    }
+    .slideDesc{
+        font-size: 28px;
+    }
+    .price-item{
+        font-size: 34px;
+    }
+
+}
